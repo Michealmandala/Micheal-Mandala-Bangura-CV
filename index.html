@@ -11,11 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-overlay"></div>
+  <header class="hero" role="banner">
     <div class="hero-inner">
       <div class="hero-photo" aria-hidden="true">
-        <img src="mb.jpg" alt="Photo of Micheal Mandala Bangura">
+        <img src="mb.jpg" alt="Photo of Micheal Mandala Bangura" width="1920" height="1280">
       </div>
       <div class="hero-content">
         <div class="eyebrow">Micheal Mandala Bangura</div>
@@ -23,12 +22,12 @@
         <p class="tagline">Purpose‑driven technologist focused on sustainable solutions, community empowerment, and user‑centered design. Skilled with Figma, Survey123, ArcGIS, and modern web fundamentals.</p>
         <div class="meta">
           <span>Freetown, Sierra Leone</span>
-          <span>•</span>
+          <span class="dot">•</span>
           <a href="mailto:michealmandalabangura@gmail.com">michealmandalabangura@gmail.com</a>
-          <span>•</span>
+          <span class="dot">•</span>
           <a href="tel:+23279169251">(+232) 79 169251</a>
         </div>
-        <nav class="hero-nav" aria-label="Primary">
+        <nav class="hero-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
@@ -40,13 +39,13 @@
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="card">
+  <main class="container" id="main">
+    <section id="about" class="card reveal">
       <h2>About</h2>
       <p>A purpose‑driven Information Systems student at the Institute of Public Administration and Management (IPAM), University of Sierra Leone, with one semester remaining. Passionate about the intersection of technology, sustainability, and youth empowerment. Active in environmental initiatives and developing expertise in UI/UX and GIS to build impactful solutions.</p>
     </section>
 
-    <section id="experience" class="card">
+    <section id="experience" class="card reveal">
       <h2>Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
@@ -83,7 +82,7 @@
       </div>
     </section>
 
-    <section id="education" class="card two-col">
+    <section id="education" class="card two-col reveal">
       <div>
         <h2>Education</h2>
         <h3>BSc in Information Systems</h3>
@@ -99,28 +98,28 @@
       </div>
     </section>
 
-    <section id="skills" class="card">
+    <section id="skills" class="card reveal">
       <h2>Skills</h2>
       <div class="chips">
         <span>UI/UX Design (Figma)</span><span>GIS: Survey123</span><span>ArcGIS</span><span>HTML &amp; CSS</span><span>Microsoft Office</span><span>Data Collection</span><span>Public Relations</span>
       </div>
     </section>
 
-    <section id="community" class="card">
+    <section id="community" class="card reveal">
       <h2>Leadership & Community</h2>
       <p>Active member and Secretary General at Wesleyan Church (Kissy Grassfield Youth Fellowship). Participated in UNDP & DSTI data projects and community climate initiatives focused on awareness and sustainable practices.</p>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact" class="card reveal">
       <h2>Contact</h2>
       <div class="contact-grid">
         <div>
           <p><strong>Email</strong><br><a href="mailto:michealmandalabangura@gmail.com">michealmandalabangura@gmail.com</a></p>
           <p><strong>Phone</strong><br><a href="tel:+23279169251">(+232) 79 169251</a></p>
           <p><strong>Address</strong><br>66A off Bai Bureh Road, Low cost steep Quarry, Kissy, Freetown, Sierra Leone</p>
-          <p class="small">Social: <a href="https://www.facebook.com/share/18QCXTCs66/?mibextid=LQQJ4d" target="_blank">Facebook</a> • <a href="https://youtube.com/@bestleone01" target="_blank">YouTube</a> • <a href="https://www.linkedin.com/in/micheal-bangura-1370a5307" target="_blank">LinkedIn</a></p>
+          <p class="small">Social: <a href="https://www.facebook.com/share/18QCXTCs66/?mibextid=LQQJ4d" target="_blank" rel="noopener">Facebook</a> • <a href="https://youtube.com/@bestleone01" target="_blank" rel="noopener">YouTube</a> • <a href="https://www.linkedin.com/in/micheal-bangura-1370a5307" target="_blank" rel="noopener">LinkedIn</a></p>
         </div>
-        <form action="https://formspree.io/f/xvgwbqwg" method="POST">
+        <form action="https://formspree.io/f/xvgwbqwg" method="POST" class="contact-form" aria-label="Contact form">
           <label for="name">Name</label>
           <input id="name" name="name" placeholder="Your name" required>
 
@@ -138,7 +137,7 @@
   </main>
 
   <footer class="site-footer">
-    <div>© 2025 Micheal Mandala Bangura — All content on this page is the live CV.</div>
+    <div>© 2025 Micheal Mandala Bangura — Live CV</div>
   </footer>
 
   <script src="script.js"></script>
